@@ -195,6 +195,9 @@ class MainActivity : AppCompatActivity() {
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.show()
             return true
+        } else if (item.itemId == R.id.action_how_to_use) {
+            startActivity(Intent(this, HowToUseActivity::class.java))
+            return true
         } else if (item.itemId == R.id.action_advanced_features) {
             startActivity(Intent(this, AdvancedDashboardActivity::class.java))
             return true

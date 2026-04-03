@@ -37,6 +37,11 @@
             android:theme="@style/Theme.AnomX" />
 
         <activity
+            android:name=".HowToUseActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AnomX" />
+
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AnomX">

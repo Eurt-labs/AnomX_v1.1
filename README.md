@@ -1,34 +1,34 @@
-# 🚨 AnomX - Emergency Response System
+# 🚨 AnomX - Personal Safety App
 
-AnomX is an elite, tactical-tier modern Emergency Response Application built natively for Android. With its ultra-minimalist Material-You inspired dark interface, AnomX strips away all bloatware to give users instant, uncompromising access to life-saving communication channels.
+AnomX is a simple, fast, and reliable personal safety application built for Android. It strips away complicated menus to give you instant access to life-saving communication channels when you need them most.
 
 ![AnomX Logo](app/src/main/res/drawable/ic_anomx_logo.png)
 
 ## 🛡️ Core Features
 
-* **Multi-Channel SOS Blasting:** AnomX instantly bypasses standard dialing by broadcasting pre-compiled SOS strings—including high-precision Google Maps drop-pins—directly to registered contacts via SMS or Secure WhatsApp injection.
-* **Kinetic Trigger (Shake to Alert):** Stuck in a situation where you can't unlock your screen? The built-in Foreground Service continuously samples your device's accelerometer. Violently shake the device twice within 3 seconds to auto-trigger the SOS silently from your pocket.
-* **Live Dynamic Tracking Dashboard:** The app dashboard seamlessly embeds an active Google Map linked directly to your fused location providers, actively cross-referencing your GPS node coordinates (`Latitude` / `Longitude`) so you are never lost.
-* **National Directory Database:** Includes a fully functional `.Intent.ACTION_DIAL` database covering all Indian National Emergency grids (Women's Helplines, Highway Transport, Disaster Management, etc.).
+* **Quick SOS Alerts:** Send emergency alerts with your exact Google Maps location to your trusted contacts via SMS or WhatsApp with a single tap.
+* **Shake to Alert:** If you can't reach your screen, just shake your phone twice to securely step sending an SOS message directly from your pocket.
+* **Live Location Tracking:** The app's main screen shows a live map tracking your current location so you always know exactly where you are.
+* **Emergency Contact Directory:** Includes a built-in list of national emergency services (Women's Helplines, Ambulances, Disaster Management) so you can call for help instantly.
 
-## ⚡ Advanced Security Modules (The Hub)
+## ⚡ Extra Features
 
-AnomX includes an exclusive suite of tactical features that can be armed via the `Advanced Features` Dashboard.
+AnomX includes extra safety features that can be turned on via the `Advanced Features` menu in the app.
 
-1. **Last-Gasp Battery Ping:** 
+1. **Low Battery SOS Ping:** 
    * *Status:* **Active**
-   * Integrates silently into the Android OS via a hidden `BroadcastReceiver`. If AnomX detects your battery has hit the absolute critical threshold (usually 5-15%), it automatically retrieves an emergency GPS lock and transmits a final SOS letting your contacts know your phone is about to die and where you exactly are.
-2. **Continuous GPS Looping (Breadcrumbs):**
-   * *Status:* **In Development / Planned Module**
-   * Will utilize a repeating execution thread to continuously ping your location every 3 minutes.
+   * Automatically sends a final SOS message with your location if your phone battery drops very low (around 10%), letting your emergency contacts know your phone is about to turn off.
+2. **Live GPS Auto-Updates:**
+   * *Status:* **In Development**
+   * Instead of sending your location just once, the app will keep updating and sending your new location to your trusted contacts every 3 minutes so you can be easily tracked.
 
 ## 📱 How to Use
 
-1. **Add Emergency Contacts:** Upon launching the app, go to the contacts card. Enter a trusted phone number and hit `+`.
-2. **Select Mode:** Toggle between `SMS Mode` (which blasts everyone on your list) or `WhatsApp` (which restricts to your absolute primary contact via deep linking).
-3. **Arm the Kinetic Service:** Tap the `ON` button inside the **Shake to Alert** card. A silent notification will be pinned to your Android status bar proving the hardware accelerometer is actively guarding you.
-4. **Manual Trigger:** In an emergency, smash the giant pink `EMERGENCY SOS` button. It will independently request your GPS lock, format the payload, and launch the alert.
-5. **Advanced Hub:** Tap the 3 dots in the top right corner and open `Advanced Features`. Toggle `Siren Overdrive UI` to add the massive red Bypass Siren to your home screen!
+1. **Add Emergency Contacts:** Open the app and go down to the contacts sections. Type a trusted phone number and press `+`.
+2. **Select Mode:** Choose between `SMS Mode` (which sends texts to everyone on your list) or `WhatsApp` (which sends a message to your primary contact via WhatsApp).
+3. **Turn on Shake to Alert:** Tap the `ON` button inside the **Shake to Alert** card. A small icon will appear at the top of your phone letting you know it's actively guarding you in the background.
+4. **Trigger an SOS:** In an emergency, tap the large pink `EMERGENCY SOS` button, or shake your phone twice rapidly.
+5. **Turn on Extra Features:** Tap the 3 dots in the top right corner and open `Advanced Features` to enable the low battery ping or continuous tracking!
 
 ## 🔧 Technical Requirements
 

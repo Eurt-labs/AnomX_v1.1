@@ -6,8 +6,13 @@
         android:title="Emergency Numbers"
         app:showAsAction="never" />
     <item
+        android:id="@+id/action_how_to_use"
+        android:title="How to Use App"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_advanced_features"
-        android:title="Advanced Features"
+        android:title="Extra Features"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_about"
