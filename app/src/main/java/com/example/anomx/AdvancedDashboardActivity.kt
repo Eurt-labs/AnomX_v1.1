@@ -48,14 +48,14 @@ class AdvancedDashboardActivity : AppCompatActivity() {
 
     private fun updateCardVisuals(card: MaterialCardView, statusLabel: TextView, isActive: Boolean) {
         if (isActive) {
-            // Bright, Highlighted layout for ENABLED modules
+            // Bright, Highlighted layout for ARMED modules
             card.setCardBackgroundColor(Color.parseColor("#381E72"))
             card.strokeColor = Color.parseColor("#D0BCFF")
             card.alpha = 1.0f
 
-            statusLabel.text = "ENABLED"
+            statusLabel.text = "ARMED"
             statusLabel.setTextColor(Color.parseColor("#FFFFFF"))
-            statusLabel.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#2E7D32")) // Green Background
+            statusLabel.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#600000")) // Deep Red Alert Background
         } else {
             // Dimmed layout for INACTIVE modules
             card.setCardBackgroundColor(Color.parseColor("#1A181F"))

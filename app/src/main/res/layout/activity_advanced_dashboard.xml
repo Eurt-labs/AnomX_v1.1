@@ -17,7 +17,7 @@
             android:id="@+id/toolbarAdvanced"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Extra Features"
+            app:title="Advanced Security"
             app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
             app:titleTextColor="#D0BCFF" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:letterSpacing="0.05"
-                android:text="Tap a feature below to turn it on. Darkened features are currently off."
+                android:text="Tap a module below to arm it. Unhighlighted modules are inactive."
                 android:textColor="#938F99"
                 android:textSize="14sp" />
 
@@ -73,7 +73,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-medium"
-                            android:text="Low Battery SOS Ping"
+                            android:text="Last-Gasp Battery Ping"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:lineSpacingExtra="4dp"
-                        android:text="Automatically sends a final SOS message with your location if your phone battery drops very low (around 10%), letting your emergency contacts know your phone is about to turn off."
+                        android:text="Intercepts the Android OS critical battery broadcast (5-15%). Autonomously retrieves extreme-precision GPS lock and fires a final SOS payload before your device powers off permanently."
                         android:textColor="#AFAFAF"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -134,7 +134,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="sans-serif-medium"
-                            android:text="Live GPS Auto-Updates"
+                            android:text="Continuous GPS Looping"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -158,7 +158,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:lineSpacingExtra="4dp"
-                        android:text="Instead of sending your location just once, the app will keep updating and sending your new location to your trusted contacts every 3 minutes so you can be easily tracked."
+                        android:text="Modifies the ShakeService background thread string. Instead of a single ping, an armed device will securely transmit new geographical coordinates to contacts every 3 minutes."
                         android:textColor="#AFAFAF"
                         android:textSize="14sp" />
                 </LinearLayout>
