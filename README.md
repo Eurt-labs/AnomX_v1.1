@@ -1,57 +1,85 @@
-# 🚨 AnomX - Personal Safety App
+<div align="center">
 
-AnomX is a simple, fast, and reliable personal safety application built for Android. It strips away complicated menus to give you instant access to life-saving communication channels when you need them most.
+# 🚨 AnomX 
 
-![AnomX Logo](app/src/main/res/drawable/ic_anomx_logo.png)
+**Your Personal Emergency Response System**  
+*Strips away the noise, focusing purely on rapid, life-saving communication.*
 
-## 🖼️ Application UI & Animations
+[![Version](https://img.shields.io/badge/Version-v2.4.0-381E72?style=for-the-badge&logoColor=white)](#)
+[![Platform](https://img.shields.io/badge/Platform-Android_12+-4CAF50?style=for-the-badge&logo=android)](#)
+[![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin)](#)
 
-Here is a glimpse into the dynamic, material-design layout of AnomX in action:
+<br/>
 
-<p align="center">
-  <img src="docs/app_animation.webp" width="400" alt="AnomX Animated UI Recording" />
-</p>
+<img src="app/src/main/res/drawable/ic_anomx_logo.png" alt="AnomX Logo" width="120"/>
 
-| Main Dashboard | Advanced Features |
-| :---: | :---: |
-| ![Main UI](docs/ui_main.png) | ![Advanced UI](docs/ui_advanced.png) |
+<br/>
+<br/>
 
-*The app heavily leverages modern Material Card animations, dynamic color filtering on toggles, and seamless sliding transitions between feature states.*
-## 🛡️ Core Features
+### Witness AnomX in Action:
 
-* **Quick SOS Alerts:** Send emergency alerts with your exact Google Maps location to your trusted contacts via SMS or WhatsApp with a single tap.
-* **Shake to Alert:** If you can't reach your screen, just shake your phone twice to securely step sending an SOS message directly from your pocket.
-* **Live Location Tracking:** The app's main screen shows a live map tracking your current location so you always know exactly where you are.
-* **Emergency Contact Directory:** Includes a built-in list of national emergency services (Women's Helplines, Ambulances, Disaster Management) so you can call for help instantly.
+<img src="docs/app_animation.webp" width="300" style="border-radius:20px; box-shadow: 0px 10px 30px rgba(255, 180, 171, 0.2);" alt="AnomX Animated UI Recording" />
 
-## ⚡ Extra Features
-
-AnomX includes extra safety features that can be turned on via the `Advanced Features` menu in the app.
-
-1. **Low Battery SOS Ping:** 
-   * *Status:* **Active**
-   * Automatically sends a final SOS message with your location if your phone battery drops very low (around 10%), letting your emergency contacts know your phone is about to turn off.
-2. **Live GPS Auto-Updates:**
-   * *Status:* **In Development**
-   * Instead of sending your location just once, the app will keep updating and sending your new location to your trusted contacts every 3 minutes so you can be easily tracked.
-
-## 📱 How to Use
-
-1. **Add Emergency Contacts:** Open the app and go down to the contacts sections. Type a trusted phone number and press `+`.
-2. **Select Mode:** Choose between `SMS Mode` (which sends texts to everyone on your list) or `WhatsApp` (which sends a message to your primary contact via WhatsApp).
-3. **Turn on Shake to Alert:** Tap the `ON` button inside the **Shake to Alert** card. A small icon will appear at the top of your phone letting you know it's actively guarding you in the background.
-4. **Trigger an SOS:** In an emergency, tap the large pink `EMERGENCY SOS` button, or shake your phone twice rapidly.
-5. **Turn on Extra Features:** Tap the 3 dots in the top right corner and open `Advanced Features` to enable the low battery ping or continuous tracking!
-
-## 🔧 Technical Requirements
-
-* **Android SDK:** API 26+ (Android 8.0 Oreo and above)
-* **Location Systems:** Requires `ACCESS_FINE_LOCATION` and `ACCESS_COARSE_LOCATION`
-* **SMS Injection:** Requires `SEND_SMS`
-* **Internet:** Required to render the dynamic Map Iframe constraint.
-
-## 🤝 Support & Bug Reports
-Encountering crashes? Reach out directly via the in-app Bug Report module (Located in `Options > About`) which will secure an encrypted WhatsApp bridge directly to the development pipeline.
+</div>
 
 ---
-*Built with ❤️ for public safety and security.*
+
+## ⚡ What is AnomX?
+
+**AnomX** is a highly-optimized Android application designed for ultimate personal safety. In emergency scenarios, every second counts. AnomX removes complex navigation, granting instant access to emergency broadcasting tools ranging from hardware shake-detection to live GPS tracking.
+
+## 🛡️ Core Arsenal
+
+| Feature | Description |
+| :--- | :--- |
+| **🚀 One-Tap SOS** | Push the massive `EMERGENCY SOS` button to immediately broadcast your status and real-time Google Maps coordinates to your trusted contacts via encrypted WhatsApp or raw SMS. |
+| **📳 Shake to Alert** | Phone in your pocket? Simply shake the device rapidly twice. AnomX’s background service catches the physical anomaly and triggers a distress signal covertly. |
+| **📍 Live Cartography** | A real-time updating map feeds your exact coordinate data straight to the dashboard, ensuring you always know where you are before broadcasting. |
+| **📞 National Directory** | An offline dictionary of localized and national emergency services right at your fingertips. |
+
+## 🧬 Advanced Modules
+
+Dive into the **Extra Features** dashboard to turn your device into an autonomous beacon:
+
+- **🔋 Low Battery SOS Ping:**  
+  *Status:*🟢 Active  
+  When your device detects battery levels dropping into critical territory, AnomX fires a final autonomous SOS containing your last-known coordinates before the phone dies.
+
+- **📡 Live GPS Auto-Updates:**  
+  *Status:*🔴 In Development  
+  Once an SOS is triggered, this module locks onto your movement, firing continuous coordinate pings to your emergency contacts on a rolling interval.
+
+
+## 🖼️ UI & Aesthetics
+
+Designed with a strict, dark-mode Material UI aesthetic emphasizing high-contrast readability in high-stress situations.
+
+<div align="center">
+  
+| **Main Mission Control** | **Advanced Telemetry** |
+| :---: | :---: |
+| <img src="docs/ui_main.png" width="250"/> | <img src="docs/ui_advanced.png" width="250"/> |
+
+</div>
+
+## 🛠 Setup & Launch
+
+It’s incredibly simple to arm the system:
+
+1. **Add Your Defenders:** Access the dashboard and input the phone number of a trusted friend, family member, or guardian.
+2. **Choose the Bridge:** Select either raw `SMS Mode` for maximum reliability or `WhatsApp` for rich-text and encryption.
+3. **Arm the Sensors:** Toggle `Shake to Alert` to ON.
+4. **Survive:** You are now protected by AnomX.
+
+### Technical Requirements
+* **API Target:** Built for cutting-edge Android 12+ 
+* **Core Permissions:**  
+  - 📍 `ACCESS_FINE_LOCATION`  
+  - 💬 `SEND_SMS`  
+  - 🌐 `INTERNET`
+
+---
+
+<div align="center">
+  <i>"Built by Eurt-labs to protect those who need it most."</i>
+</div>
