@@ -6,7 +6,11 @@ AnomX is a simple, fast, and reliable personal safety application built for Andr
 
 ## 🖼️ Application UI & Animations
 
-Here is a glimpse into the dynamic, material-design layout of AnomX:
+Here is a glimpse into the dynamic, material-design layout of AnomX in action:
+
+<p align="center">
+  <img src="docs/app_animation.webp" width="400" alt="AnomX Animated UI Recording" />
+</p>
 
 | Main Dashboard | Advanced Features |
 | :---: | :---: |
