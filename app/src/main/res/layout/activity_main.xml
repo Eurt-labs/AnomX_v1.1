@@ -73,19 +73,6 @@
                     android:textStyle="bold"
                     app:cornerRadius="12dp"
                     app:backgroundTint="#FFB4AB" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnSirenOverdrive"
-                    android:layout_width="250dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="24dp"
-                    android:text="🚨 SIREN OVERDRIVE 🚨"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:visibility="gone"
-                    app:backgroundTint="#B30000"
-                    app:cornerRadius="12dp" />
             </LinearLayout>
 
             <!-- Service Controls Card -->

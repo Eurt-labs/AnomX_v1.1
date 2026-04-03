@@ -51,20 +51,12 @@ class MainActivity : AppCompatActivity() {
         val modeToggleGroup = findViewById<MaterialButtonToggleGroup>(R.id.modeToggleGroup)
         val contactsCard = findViewById<LinearLayout>(R.id.contactsCard)
         val btnMoreDetails = findViewById<Button>(R.id.btnMoreDetails)
-        val btnSiren = findViewById<Button>(R.id.btnSirenOverdrive)
 
         btnMoreDetails.setOnClickListener {
             startActivity(Intent(this, NationalDirectoryActivity::class.java))
         }
 
-        btnSiren.setOnClickListener {
-            val audio = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-            val maxVol = audio.getStreamMaxVolume(AudioManager.STREAM_ALARM)
-            audio.setStreamVolume(AudioManager.STREAM_ALARM, maxVol, 0)
-            val toneG = ToneGenerator(AudioManager.STREAM_ALARM, 100)
-            toneG.startTone(ToneGenerator.TONE_CDMA_EMERGENCY_RINGBACK, 10000)
-            Toast.makeText(this, "SIREN OVERDRIVE ACTIVATED!", Toast.LENGTH_SHORT).show()
-        }
+
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -204,40 +196,7 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
             return true
         } else if (item.itemId == R.id.action_advanced_features) {
-            val dialogView = layoutInflater.inflate(R.layout.dialog_advanced_features, null)
-            val prefs = getSharedPreferences("adv_settings", MODE_PRIVATE)
-            
-            val swSiren = dialogView.findViewById<SwitchCompat>(R.id.switch_siren)
-            val swBattery = dialogView.findViewById<SwitchCompat>(R.id.switch_battery)
-            val swBreadcrumbs = dialogView.findViewById<SwitchCompat>(R.id.switch_breadcrumbs)
-            val swVolKeys = dialogView.findViewById<SwitchCompat>(R.id.switch_volkeys)
-            
-            // Load states
-            swSiren.isChecked = prefs.getBoolean("opt_siren", false)
-            swBattery.isChecked = prefs.getBoolean("opt_battery", false)
-            swBreadcrumbs.isChecked = prefs.getBoolean("opt_breadcrumbs", false)
-            swVolKeys.isChecked = prefs.getBoolean("opt_volkeys", false)
-            
-            // Setup Listeners
-            fun setToggle(sw: SwitchCompat, key: String) {
-                sw.setOnCheckedChangeListener { _, isChecked ->
-                    prefs.edit().putBoolean(key, isChecked).apply()
-                    if (key == "opt_siren") {
-                        recreate() // Reload main activity to show/hide the siren button
-                    }
-                }
-            }
-            
-            setToggle(swSiren, "opt_siren")
-            setToggle(swBattery, "opt_battery")
-            setToggle(swBreadcrumbs, "opt_breadcrumbs")
-            setToggle(swVolKeys, "opt_volkeys")
-
-            val dialog = AlertDialog.Builder(this)
-                .setView(dialogView)
-                .create()
-            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            dialog.show()
+            startActivity(Intent(this, AdvancedDashboardActivity::class.java))
             return true
         }
         return super.onOptionsItemSelected(item)
@@ -361,14 +320,6 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         updateServiceUI()
         updateMapLocation()
-        
-        val advPrefs = getSharedPreferences("adv_settings", MODE_PRIVATE)
-        val btnSiren = findViewById<Button>(R.id.btnSirenOverdrive)
-        if (advPrefs.getBoolean("opt_siren", false)) {
-            btnSiren.visibility = View.VISIBLE
-        } else {
-            btnSiren.visibility = View.GONE
-        }
     }
 
     @SuppressLint("SetJavaScriptEnabled")
