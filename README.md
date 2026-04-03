@@ -24,9 +24,6 @@ AnomX includes an exclusive suite of tactical features that can be toggled via t
 3. **Continuous GPS Looping (Breadcrumbs):**
    * *Status:* **In Development / Planned Module**
    * Will utilize a repeating execution thread to continuously ping your location every 3 minutes.
-4. **Hardware SOS Bypass (Volume Keys):**
-   * *Status:* **In Development / Planned Module**
-   * Will integrate Accessibility nodes to allow you to rapidly click the physical Volume-Down rocker to blast an SOS.
 
 ## 📱 How to Use
 
