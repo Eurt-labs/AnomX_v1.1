@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/material_surface"
+    android:background="#1B1B1B"
     android:orientation="vertical"
     android:padding="24dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Advanced Features"
+        android:layout_marginBottom="16dp"
+        android:text="Advanced Security Modules"
         android:textColor="#FFB4AB"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,70 +25,72 @@
             android:orientation="vertical">
 
             <!-- Siren Overdrive -->
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch_siren"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Siren Overdrive UI"
+                android:layout_marginBottom="4dp"
+                android:text="Siren Overdrive Interface"
                 android:textColor="#E6E0E9"
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp"/>
-            <TextView android:text="Adds a Siren button to the main dashboard." android:textColor="#CAC4D0" android:textSize="12sp" android:layout_marginTop="-12dp" android:layout_marginBottom="16dp"/>
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Injects a Siren bypass button to the main dashboard."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
 
             <!-- Battery Ping -->
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch_battery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Last-Gasp Battery Ping"
+                android:layout_marginBottom="4dp"
+                android:text="Battery Failure Ping"
                 android:textColor="#E6E0E9"
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp"/>
-            <TextView android:text="Fires an auto-SOS when phone battery critically dies." android:textColor="#CAC4D0" android:textSize="12sp" android:layout_marginTop="-12dp" android:layout_marginBottom="16dp"/>
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Autonomously fires SOS when phone reaches critical battery."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
 
             <!-- Breadcrumbs -->
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch_breadcrumbs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Continuous Breadcrumbs"
+                android:layout_marginBottom="4dp"
+                android:text="Continuous GPS Looping"
                 android:textColor="#E6E0E9"
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp"/>
-            <TextView android:text="Sends a new GPS link every 5 minutes during an active SOS." android:textColor="#CAC4D0" android:textSize="12sp" android:layout_marginTop="-12dp" android:layout_marginBottom="16dp"/>
-
-            <!-- Audio Record -->
-            <Switch
-                android:id="@+id/switch_audio"
+                android:textSize="16sp" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stealth Audio Recording"
-                android:textColor="#E6E0E9"
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp"/>
-            <TextView android:text="Silently records mic audio when SOS is triggered." android:textColor="#CAC4D0" android:textSize="12sp" android:layout_marginTop="-12dp" android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="24dp"
+                android:text="Fires an updated location matrix every 3 minutes."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
 
-            <!-- Vol Keys -->
-            <Switch
+            <!-- Volume Hardware Bypass -->
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch_volkeys"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Volume Key SOS Trigger"
+                android:layout_marginBottom="4dp"
+                android:text="Hardware SOS Bypass"
                 android:textColor="#E6E0E9"
-                android:textSize="16sp"
-                android:layout_marginBottom="12dp"/>
-            <TextView android:text="Triple press Vol-Down to blast SOS silently." android:textColor="#CAC4D0" android:textSize="12sp" android:layout_marginTop="-12dp" android:layout_marginBottom="16dp"/>
-
-            <!-- Dead Man Switch -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_dead_man_switch"
-                style="?attr/materialButtonOutlinedStyle"
+                android:textSize="16sp" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Configure Dead Man Switch"
-                android:textColor="#FFB4AB"
-                app:strokeColor="#FFB4AB"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginBottom="24dp"
+                android:text="Triple tap Volume DOWN to trigger an instant background SOS."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
 
         </LinearLayout>
     </ScrollView>

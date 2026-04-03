@@ -26,6 +26,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.SwitchCompat
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.button.MaterialButtonToggleGroup
@@ -206,21 +207,19 @@ class MainActivity : AppCompatActivity() {
             val dialogView = layoutInflater.inflate(R.layout.dialog_advanced_features, null)
             val prefs = getSharedPreferences("adv_settings", MODE_PRIVATE)
             
-            val swSiren = dialogView.findViewById<Switch>(R.id.switch_siren)
-            val swBattery = dialogView.findViewById<Switch>(R.id.switch_battery)
-            val swBreadcrumbs = dialogView.findViewById<Switch>(R.id.switch_breadcrumbs)
-            val swAudio = dialogView.findViewById<Switch>(R.id.switch_audio)
-            val swVolKeys = dialogView.findViewById<Switch>(R.id.switch_volkeys)
+            val swSiren = dialogView.findViewById<SwitchCompat>(R.id.switch_siren)
+            val swBattery = dialogView.findViewById<SwitchCompat>(R.id.switch_battery)
+            val swBreadcrumbs = dialogView.findViewById<SwitchCompat>(R.id.switch_breadcrumbs)
+            val swVolKeys = dialogView.findViewById<SwitchCompat>(R.id.switch_volkeys)
             
             // Load states
             swSiren.isChecked = prefs.getBoolean("opt_siren", false)
             swBattery.isChecked = prefs.getBoolean("opt_battery", false)
             swBreadcrumbs.isChecked = prefs.getBoolean("opt_breadcrumbs", false)
-            swAudio.isChecked = prefs.getBoolean("opt_audio", false)
             swVolKeys.isChecked = prefs.getBoolean("opt_volkeys", false)
             
             // Setup Listeners
-            fun setToggle(sw: Switch, key: String) {
+            fun setToggle(sw: SwitchCompat, key: String) {
                 sw.setOnCheckedChangeListener { _, isChecked ->
                     prefs.edit().putBoolean(key, isChecked).apply()
                     if (key == "opt_siren") {
@@ -232,7 +231,6 @@ class MainActivity : AppCompatActivity() {
             setToggle(swSiren, "opt_siren")
             setToggle(swBattery, "opt_battery")
             setToggle(swBreadcrumbs, "opt_breadcrumbs")
-            setToggle(swAudio, "opt_audio")
             setToggle(swVolKeys, "opt_volkeys")
 
             val dialog = AlertDialog.Builder(this)
