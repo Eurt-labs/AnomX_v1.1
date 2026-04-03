@@ -71,6 +71,7 @@
                     android:textColor="#381E72"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
                     app:cornerRadius="12dp"
                     app:backgroundTint="#FFB4AB" />
             </LinearLayout>

@@ -164,13 +164,7 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
             return true
         } else if (item.itemId == R.id.action_how_to_use) {
-            val dialogView = layoutInflater.inflate(R.layout.dialog_how_to_use, null)
-            
-            val dialog = AlertDialog.Builder(this)
-                .setView(dialogView)
-                .create()
-            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            dialog.show()
+            startActivity(Intent(this, HowToUseActivity::class.java))
             return true
         } else if (item.itemId == R.id.action_emergency_numbers) {
             val dialogView = layoutInflater.inflate(R.layout.dialog_emergency_numbers, null)
@@ -194,9 +188,6 @@ class MainActivity : AppCompatActivity() {
                 .create()
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.show()
-            return true
-        } else if (item.itemId == R.id.action_how_to_use) {
-            startActivity(Intent(this, HowToUseActivity::class.java))
             return true
         } else if (item.itemId == R.id.action_advanced_features) {
             startActivity(Intent(this, AdvancedDashboardActivity::class.java))

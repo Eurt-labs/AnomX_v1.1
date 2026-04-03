@@ -4,6 +4,15 @@ AnomX is a simple, fast, and reliable personal safety application built for Andr
 
 ![AnomX Logo](app/src/main/res/drawable/ic_anomx_logo.png)
 
+## 🖼️ Application UI & Animations
+
+Here is a glimpse into the dynamic, material-design layout of AnomX:
+
+| Main Dashboard | Advanced Features |
+| :---: | :---: |
+| ![Main UI](docs/ui_main.png) | ![Advanced UI](docs/ui_advanced.png) |
+
+*The app heavily leverages modern Material Card animations, dynamic color filtering on toggles, and seamless sliding transitions between feature states.*
 ## 🛡️ Core Features
 
 * **Quick SOS Alerts:** Send emergency alerts with your exact Google Maps location to your trusted contacts via SMS or WhatsApp with a single tap.
