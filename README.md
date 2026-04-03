@@ -13,15 +13,12 @@ AnomX is an elite, tactical-tier modern Emergency Response Application built nat
 
 ## ⚡ Advanced Security Modules (The Hub)
 
-AnomX includes an exclusive suite of tactical features that can be toggled via the `Advanced Features` menu in the Options tab.
+AnomX includes an exclusive suite of tactical features that can be armed via the `Advanced Features` Dashboard.
 
-1. **Siren Overdrive Interface:** 
-   * *Status:* **Active**
-   * Overrides Android's `MediaAudioManager` to forcefully bypass Silent/DND modes, maxing out your device volume and blaring an aggressive 10-second CDMA Emergency Ringback distress siren to disarm attackers and alert bystanders.
-2. **Last-Gasp Battery Ping:** 
+1. **Last-Gasp Battery Ping:** 
    * *Status:* **Active**
    * Integrates silently into the Android OS via a hidden `BroadcastReceiver`. If AnomX detects your battery has hit the absolute critical threshold (usually 5-15%), it automatically retrieves an emergency GPS lock and transmits a final SOS letting your contacts know your phone is about to die and where you exactly are.
-3. **Continuous GPS Looping (Breadcrumbs):**
+2. **Continuous GPS Looping (Breadcrumbs):**
    * *Status:* **In Development / Planned Module**
    * Will utilize a repeating execution thread to continuously ping your location every 3 minutes.
 
